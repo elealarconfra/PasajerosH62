@@ -1,8 +1,7 @@
 
-public class Bus
+public class Bus extends Vehiculo
 {
     private int numPuestos;
-    private String placa;
     private String tipo;
     private int numInterno;
     
@@ -14,7 +13,6 @@ public class Bus
     public Bus(int numPuestos, String placa, String tipo, int numInterno)
     {
         this.numPuestos = numPuestos;
-        this.placa = placa;
         this.tipo = tipo;
         this.numInterno = numInterno;
     }
@@ -28,19 +26,7 @@ public class Bus
     {
         this.numPuestos = numPuestos;
     }
-    
-    public String getPlaca()
-    {
-        return this.placa;
-    }
 
-    
-    public void setPlaca(String placa)
-    {
-        this.placa = placa;
-    }
-
-    
     public String getTipo()
     {
         return this.tipo;
@@ -61,7 +47,9 @@ public class Bus
         this.numInterno = numInterno;
     }
 
-
-
-
+    public String getNombreEmpresa()
+    {
+        return "Brasilia";
+    }
+    
 }
